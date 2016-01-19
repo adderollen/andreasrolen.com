@@ -12,74 +12,75 @@ $('a').click(function() {
 $(document).ready(function() {
 	var width = window.innerWidth;
     $("header .title").toggleClass("visible");
-    $("header .menu .item").toggleClass("visible");
+    $(".menu .item").toggleClass("visible");
 })
 
 var waypointInfo = $('#about_me').waypoint({
   handler: function(direction) {
-  	$('#about_me .title').toggleClass('visible')
-    $('#about_me .left').toggleClass('visible');
-    $('#about_me .right').toggleClass('visible');
+  	$('#about_me').find('h2.title').toggleClass('visible')
+    $('#about_me').find('div.left').toggleClass('visible');
+    $('#about_me').find('div.right').toggleClass('visible');
 },
-offset: '50%'
+offset: '60%'
 })
 
 var waypointInfo = $('#what-i-do').waypoint({
   handler: function(direction) {
-  	$('#what-i-do .title').toggleClass('visible')
-    $('#what-i-do .intro').toggleClass('visible');
+  	$('#what-i-do').find('h2.title').toggleClass('visible')
+    $('#what-i-do').find('p.intro').toggleClass('visible');
 },
-offset: '50%'
+offset: '60%'
 })
 
 var waypointNorwegian = $('#norwegian').waypoint({
   handler: function(direction) {
-  	$('#norwegian .logo').toggleClass('visible');
-    $('#norwegian .left').toggleClass('visible');
-    $('#norwegian .right').toggleClass('visible');
+  	$('#norwegian').find('img.logo').toggleClass('visible');
+    $('#norwegian').find('div.left').toggleClass('visible');
+    $('#norwegian').find('div.right').toggleClass('visible');
 },
-offset: '50%'
+offset: '60%'
 })
 
 var waypointGbgtechweek = $('#gbgtechweek').waypoint({
   handler: function(direction) {
-  	$('#gbgtechweek .logo').toggleClass('visible');
-    $('#gbgtechweek .left').toggleClass('visible');
-    $('#gbgtechweek .right').toggleClass('visible');
+  	$('#gbgtechweek').find('img.logo').toggleClass('visible');
+    $('#gbgtechweek').find('div.left').toggleClass('visible');
+    $('#gbgtechweek').find('div.right').toggleClass('visible');
 },
-offset: '50%'
+offset: '60%'
 })
 
 var waypointStartuphack = $('#startuphack').waypoint({
   handler: function(direction) {
-  	$('#startuphack .logo').toggleClass('visible');
-    $('#startuphack .left').toggleClass('visible');
-    $('#startuphack .right').toggleClass('visible');
+  	$('#startuphack').find('img.logo').toggleClass('visible');
+    $('#startuphack').find('div.left').toggleClass('visible');
+    $('#startuphack').find('div.right').toggleClass('visible');
 },
-offset: '50%'
+offset: '60%'
 })
 
 var waypointSvecup = $('#svecup').waypoint({
   handler: function(direction) {
-  	$('#svecup .logo').toggleClass('visible');
-    $('#svecup .left').toggleClass('visible');
-    $('#svecup .right').toggleClass('visible');
+  	$('#svecup').find('img.logo').toggleClass('visible');
+    $('#svecup').find('div.left').toggleClass('visible');
+    $('#svecup').find('div.right').toggleClass('visible');
 },
-offset: '50%'
+offset: '60%'
 })
 
 var waypointStudies = $('#studies').waypoint({
   handler: function(direction) {
-    $('#studies .left').toggleClass('visible');
-    $('#studies .right').toggleClass('visible');
+    $('#studies').find('div.left').toggleClass('visible');
+    $('#studies').find('div.right').toggleClass('visible');
 },
-offset: '50%'
+offset: '60%'
 })
 
 var waypointContact = $('#contact').waypoint({
   handler: function(direction) {
-    $('#contact h4').toggleClass('visible');
-    $('#contact h3').toggleClass('visible');
+    $('#contact').find('h2').toggleClass('visible');
+    $('#contact').find('h4').toggleClass('visible');
+    $('#contact').find('h3').toggleClass('visible');
 },
 offset: '90%'
 })

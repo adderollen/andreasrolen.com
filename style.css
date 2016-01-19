@@ -144,7 +144,7 @@ header .menu .item a:hover {
 	font-size: 1.7rem;
 	line-height: 1.4;
 	margin-top: 2em;
-	margin-bottom: 2em;
+	margin-bottom: 3em;
 }
 
 .row .row {
@@ -363,6 +363,12 @@ header .menu .item a:hover {
 	background-color: #131313;
 }
 
+#linkedin p {
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 1em;
+}
+
 .linkedin {
 	color: #287EB6;
 	text-decoration: none;
@@ -428,3 +434,128 @@ header .menu .item a:hover {
 	border-color: #131313;
 }
 
+
+@media screen and (min-device-width: 1400px) and (max-device-width: 1600px) { 
+	.content p {
+		font-size: 1.2rem;
+	}
+}
+
+@media screen and (max-device-width: 600px) { 
+	
+	header .menu {
+		width: 90%;
+	}
+
+	header .menu .item a {
+		font-size: 1.2rem;
+	}
+
+	h1 {
+		font-size: 2.8rem;
+	}
+
+	h2 {
+		font-size: 2.3rem;
+	}
+
+	h3 {
+		font-size: 1.8rem;
+	}
+
+	h4 {
+		font-size: 1.6rem;
+	}
+
+	.divider {
+		margin-top: 1.5em;
+		margin-bottom: 1.5em;
+	}
+
+	.left, .right {
+		width: 100%;
+	}
+
+	.content {
+		display: block;
+	}
+
+	.row .title {
+		margin-bottom: 0.5em;
+	}
+
+	.middle {
+		width: 80%;
+	}
+
+	#about_me .content {
+		margin-bottom: 3em;
+	}
+
+	#about_me p {
+		 position: relative;
+		 top: 50%;
+		 -webkit-transform: translateY(0%);
+		 transform: translateY(0%);
+	}
+
+	#about_me .content img {
+		visibility: visible;
+		height: inherit;
+	}
+
+	#what-i-do .intro {
+		  width: 80%;
+  font-size: 1.3rem;
+  margin-top: 1em;
+  margin-bottom: 2em;
+	}
+
+	.content img {
+		visibility: hidden;
+		height: 0;
+	}
+
+	#norwegian .logo {
+		width: 90%;
+	}
+
+#gbgtechweek .logo {
+	width: 50%;
+	margin-left: 2em;
+}
+
+#startuphack .logo {
+	width: 75%;
+}
+
+#svecup .logo {
+	width: 75%;
+}
+
+#linkedin h2 {
+	margin-bottom: 0.6em;
+}
+
+#linkedin p:last-child {
+	margin-bottom: 2em;
+}
+
+#studies .content img {
+	visibility: visible;
+	height: inherit;
+}
+
+#contact h3 {
+	font-size: 1.6rem;
+}
+
+#contact h4 {
+	font-size: 1.4rem;
+}
+
+
+
+
+
+}
