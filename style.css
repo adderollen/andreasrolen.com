@@ -237,6 +237,10 @@ header .menu .item a:hover {
 	text-align: center;
 }
 
+#about_me p {
+	padding-left: 0;
+}
+
 #about_me img {
 	border-radius: 100%;
 	border: 5px solid white;
