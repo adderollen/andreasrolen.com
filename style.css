@@ -170,9 +170,12 @@ header .menu .item a:hover {
   display: -ms-flexbox;      /* TWEENER - IE 10 */
   display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
-	justify-content:center;
+	-webkit-justify-content: center;
+	justify-content: center;
 	width: 80%;
-	margin: 0 auto
+	margin: 0 auto;
+	-webkit-align-items: center;
+	align-items: center;
 }
 
 .content > * {
@@ -181,7 +184,6 @@ header .menu .item a:hover {
   flex: 1;    
 	width: 45%;
 	display: inline-block;
-	vertical-align: top;
 	position: relative;
 	opacity: 0;
 	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
@@ -201,6 +203,7 @@ header .menu .item a:hover {
 .content p {
 	line-height: 1.6;
 	padding-right: 1em;
+	padding-left: 1em;
 	margin-top: 0;
 	margin-bottom: 2.5em;
 }
@@ -238,13 +241,6 @@ header .menu .item a:hover {
 	border-radius: 100%;
 	border: 5px solid white;
 	box-shadow: rgba(0, 0, 0, 0.4) 0 2px 6px;
-}
-
-#about_me p {
-	position: absolute;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
 }
 
 #what-i-do .intro {
@@ -380,7 +376,12 @@ header .menu .item a:hover {
 	border-bottom: 1px solid #1E5282;
 }
 
-#studies .left h4 {
+#studies .content {
+	-webkit-align-items: baseline;
+	align-items: baseline;
+}
+
+#studies h4 {
 	margin-top: 0.5em;
   height: 2em;
 }
