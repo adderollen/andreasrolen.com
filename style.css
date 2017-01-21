@@ -255,6 +255,31 @@ header .menu .item a:hover {
 
 /* Projects */
 
+#vnu {
+	background: #f3f3f3;
+	text-align: center;
+	padding-bottom: 3em;
+}
+
+#vnu h4,
+#vnu p {
+	color: #1c80d0;
+}
+
+#vnu .logo {
+	width: 35%;
+	margin: 2em 0;
+}
+
+#vnu .link-button {
+	color: #f3f3f3;
+	background-color: #1c80d0;
+}
+
+#vnu .link-button:hover {
+	background-color: #1665a5;
+}
+
 #norwegian {
 	background: #E72D3A;
 	text-align: center;

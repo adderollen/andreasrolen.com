@@ -32,6 +32,16 @@ var waypointInfo = $('#what-i-do').waypoint({
 offset: '60%'
 })
 
+var waypointVnu = $('#vnu').waypoint({
+  handler: function(direction) {
+    $('#vnu').find('img.logo').toggleClass('visible');
+    $('#vnu').find('div.left').toggleClass('visible');
+    $('#vnu').find('div.right').toggleClass('visible');
+},
+offset: '60%'
+})
+
+
 var waypointNorwegian = $('#norwegian').waypoint({
   handler: function(direction) {
   	$('#norwegian').find('img.logo').toggleClass('visible');
