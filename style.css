@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 
+
 body {
 	font-family: 'Lato';
 	margin: 0;
@@ -241,6 +242,10 @@ header .menu .item a:hover {
 	padding-left: 0;
 }
 
+#about_me p a {
+	color: #EB540A;
+}
+
 #about_me img {
 	border-radius: 100%;
 	border: 5px solid white;
@@ -254,6 +259,29 @@ header .menu .item a:hover {
 }
 
 /* Projects */
+
+#footballaddicts {
+	text-align: center;
+	padding-bottom: 3em;
+}
+
+#footballaddicts .logo {
+	width: 35%;
+}
+
+#footballaddicts h4,
+#footballaddicts p {
+    color: #00a7b7;
+}
+
+#footballaddicts .link-button {
+	color: white;
+	background-color: #00a7b7;
+}
+
+#footballaddicts .link-button:hover {
+	background-color: #008f9c;
+}
 
 #vnu {
 	background: #f3f3f3;
@@ -317,12 +345,12 @@ header .menu .item a:hover {
 }
 
 #gbgtechweek .logo {
-	width: 18%;
-	margin-bottom: 0.7em;
+	width: 13%;
+	margin-bottom: 1.5em;
 }
 
 #gbgtechweek .content img {
-	width: 95%;
+	width: 80%;
 }
 
 #gbgtechweek .link-button {

@@ -32,6 +32,15 @@ var waypointInfo = $('#what-i-do').waypoint({
 offset: '60%'
 })
 
+var waypointVnu = $('#footballaddicts').waypoint({
+  handler: function(direction) {
+    $('#footballaddicts').find('img.logo').toggleClass('visible');
+    $('#footballaddicts').find('div.left').toggleClass('visible');
+    $('#footballaddicts').find('div.right').toggleClass('visible');
+},
+offset: '60%'
+})
+
 var waypointVnu = $('#vnu').waypoint({
   handler: function(direction) {
     $('#vnu').find('img.logo').toggleClass('visible');
