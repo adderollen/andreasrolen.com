@@ -1,12 +1,14 @@
 var $root = $('html, body');
 $('a').click(function() {
-    var href = $.attr(this, 'href');
-    $root.animate({
-        scrollTop: $(href).offset().top
-    }, 1000, function () {
-        window.location.hash = href;
-    });
-    return false;
+    if (this.target != "_blank") {
+      var href = $.attr(this, 'href');
+      $root.animate({
+          scrollTop: $(href).offset().top
+      }, 1000, function () {
+          window.location.hash = href;
+      });
+      return false;
+    }
 });
 
 $(document).ready(function() {
@@ -32,11 +34,11 @@ var waypointInfo = $('#what-i-do').waypoint({
 offset: '60%'
 })
 
-var waypointVnu = $('#footballaddicts').waypoint({
+var waypointVnu = $('#forzafootball').waypoint({
   handler: function(direction) {
-    $('#footballaddicts').find('img.logo').toggleClass('visible');
-    $('#footballaddicts').find('div.left').toggleClass('visible');
-    $('#footballaddicts').find('div.right').toggleClass('visible');
+    $('#forzafootball').find('img.logo').toggleClass('visible');
+    $('#forzafootball').find('div.left').toggleClass('visible');
+    $('#forzafootball').find('div.right').toggleClass('visible');
 },
 offset: '60%'
 })

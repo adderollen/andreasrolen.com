@@ -80,7 +80,7 @@ header .menu {
 header .menu .item {
 	-webkit-flex: 1;          /* Chrome */
   -ms-flex: 1;              /* IE 10 */
-  flex: 1;    
+  flex: 1;
 	margin: 0;
 	opacity: 0;
 	transform: translate(0,-25px);
@@ -94,20 +94,20 @@ header .menu .item:nth-child(1) {
 	-moz-transition-delay: 0s;
 	-webkit-transition-delay: 0s;
 	transition-delay: 0s;
-} 
+}
 
 header .menu .item:nth-child(2) {
 	-o-transition-delay: 0.2s;
 	-moz-transition-delay: 0.2s;
 	-webkit-transition-delay: 0.2s;
 	transition-delay: 0.2s;
-} 
+}
 header .menu .item:nth-child(3) {
 	-o-transition-delay: 0.4s;
 	-moz-transition-delay: 0.4s;
 	-webkit-transition-delay: 0.4s;
 	transition-delay: 0.4s;
-} 
+}
 
 header .menu .item a {
 	text-decoration: none;
@@ -182,7 +182,7 @@ header .menu .item a:hover {
 .content > * {
 	-webkit-flex: 1;          /* Chrome */
   -ms-flex: 1;              /* IE 10 */
-  flex: 1;    
+  flex: 1;
 	width: 45%;
 	display: inline-block;
 	position: relative;
@@ -260,27 +260,27 @@ header .menu .item a:hover {
 
 /* Projects */
 
-#footballaddicts {
+#forzafootball {
 	text-align: center;
 	padding-bottom: 3em;
 }
 
-#footballaddicts .logo {
-	width: 35%;
+#forzafootball .logo {
+	width: 20%;
 }
 
-#footballaddicts h4,
-#footballaddicts p {
-    color: #00a7b7;
+#forzafootball h4,
+#forzafootball p {
+    color: #000;
 }
 
-#footballaddicts .link-button {
+#forzafootball .link-button {
 	color: white;
-	background-color: #00a7b7;
+	background-color: rgba(0,0,0,1);
 }
 
-#footballaddicts .link-button:hover {
-	background-color: #008f9c;
+#forzafootball .link-button:hover {
+	background-color: rgba(0,0,0,0.8);
 }
 
 #vnu {
@@ -491,14 +491,14 @@ header .menu .item a:hover {
 }
 
 
-@media screen and (min-device-width: 1400px) and (max-device-width: 1600px) { 
+@media screen and (min-device-width: 1400px) and (max-device-width: 1600px) {
 	.content p {
 		font-size: 1.2rem;
 	}
 }
 
-@media screen and (max-device-width: 600px) { 
-	
+@media screen and (max-device-width: 600px) {
+
 	header .menu {
 		width: 90%;
 	}
