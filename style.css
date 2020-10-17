@@ -41,27 +41,10 @@ header {
 	text-align: center;
 }
 
-body .content .visible,
-body header .title.visible,
-body header .menu .item.visible,
-body #contact h4.visible,
-body #contact h3.visible,
-body .row .title.visible,
-body #what-i-do .intro.visible,
-body .row .logo.visible
- {
-	opacity: 1 ;
-	-webkit-transform: translate(0,0) ;
-	transform: translate(0,0);
-}
-
 header .title {
 	margin-bottom: 0.6em;
 	margin-top: 0.6em;
 	cursor: default;
-	opacity: 0;
-	-webkit-transition: opacity 0.5s;
-	transition: opacity 0.5s;
 }
 
 header .menu {
@@ -82,31 +65,6 @@ header .menu .item {
   -ms-flex: 1;              /* IE 10 */
   flex: 1;
 	margin: 0;
-	opacity: 0;
-	transform: translate(0,-25px);
-	-webkit-transition: opacity 0.5s, webkit-transform 0.5s;
-	transition: opacity 0.5s, transform 0.5s;
-
-}
-
-header .menu .item:nth-child(1) {
-	-o-transition-delay: 0s;
-	-moz-transition-delay: 0s;
-	-webkit-transition-delay: 0s;
-	transition-delay: 0s;
-}
-
-header .menu .item:nth-child(2) {
-	-o-transition-delay: 0.2s;
-	-moz-transition-delay: 0.2s;
-	-webkit-transition-delay: 0.2s;
-	transition-delay: 0.2s;
-}
-header .menu .item:nth-child(3) {
-	-o-transition-delay: 0.4s;
-	-moz-transition-delay: 0.4s;
-	-webkit-transition-delay: 0.4s;
-	transition-delay: 0.4s;
 }
 
 header .menu .item a {
@@ -121,7 +79,6 @@ header .menu .item a:hover {
 	border-bottom: 1px solid #EB540A;
 }
 
-
 .row {
 	width: 100%;
 	margin: 0 auto;
@@ -130,9 +87,6 @@ header .menu .item a:hover {
 .row .title {
 	width: 80%;
 	margin: 0 auto;
-	opacity: 0;
-	-webkit-transition: 0.5s;
-	transition: 0.5s;
 }
 
 .row .intro {
@@ -148,12 +102,6 @@ header .menu .item a:hover {
 .row .row {
 	width: 100%;
 	overflow-x: hidden;
-}
-
-.row .logo {
-	opacity: 0;
-	-webkit-transition: opacity 0.5s;
-	transition: opacity 0.5s;
 }
 
 .divider {
@@ -186,19 +134,6 @@ header .menu .item a:hover {
 	width: 45%;
 	display: inline-block;
 	position: relative;
-	opacity: 0;
-	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
-	transition: opacity 0.5s, transform 0.5s;
-}
-
-.content .left {
-	-webkit-transform: translate(-100px,0);
-	transform: translate(-100px,0);
-}
-
-.content .right {
-	-webkit-transform: translate(100px,0);
-	transform: translate(100px,0);
 }
 
 .content p {
@@ -229,8 +164,6 @@ header .menu .item a:hover {
 
 
 
-
-
 /* Specific things */
 
 /* About me */
@@ -251,17 +184,38 @@ header .menu .item a:hover {
 	border: 5px solid white;
 	box-shadow: rgba(0, 0, 0, 0.4) 0 2px 6px;
 }
-
-#what-i-do .intro {
-	opacity: 0;
-	-webkit-transition: opacity 0.5s;
-	transition: opacity 0.5s;
-}
-
 /* Projects */
 
-#forzafootball {
+#what-i-do {
 	text-align: center;
+}
+
+#what-i-do .title {
+	text-align: left;
+}
+
+#facebook {
+	padding-bottom: 5em;
+}
+
+#facebook .logo {
+	width: 50%;
+}
+
+#facebook h4 {
+	color: #3485ef;
+}
+
+#facebook .link-button {
+	color: white;
+	background-color: #3485ef;
+}
+
+#facebook .link-button:hover {
+	background-color: rgba(26, 120, 242,0.8);
+}
+
+#forzafootball {
 	padding-bottom: 3em;
 }
 
@@ -285,7 +239,6 @@ header .menu .item a:hover {
 
 #vnu {
 	background: #f3f3f3;
-	text-align: center;
 	padding-bottom: 3em;
 }
 
@@ -310,7 +263,6 @@ header .menu .item a:hover {
 
 #norwegian {
 	background: #E72D3A;
-	text-align: center;
 	padding-bottom: 5em;
 }
 
@@ -334,7 +286,6 @@ header .menu .item a:hover {
 
 #gbgtechweek {
 	background: #FFFFFF;
-	text-align: center;
 	padding-top: 2em;
 	padding-bottom: 3em;
 }
@@ -364,7 +315,6 @@ header .menu .item a:hover {
 
 #startuphack {
 	background: #000000;
-	text-align: center;
 	padding-top: 2em;
 	padding-bottom: 3em;
 }
@@ -390,7 +340,6 @@ header .menu .item a:hover {
 
 #svecup {
 	background: #FFFFFF;
-	text-align: center;
 	padding-top: 2em;
 	padding-bottom: 3em;
 }
@@ -456,27 +405,6 @@ header .menu .item a:hover {
 
 #contact h4 {
 	margin-top: 1em;
-	opacity: 0;
-	-webkit-transform: translate(-100px,0);
-	transform: translate(-100px,0);
-	-webkti-transition: opacity 0.5s, -webkit-transform 0.5s;
-	transition: opacity 0.5s, translate 0.5s;
-	-o-transition-delay: 0s;
-	-moz-transition-delay: 0s;
-	-webkit-transition-delay: 0s;
-	transition-delay: 0s;
-}
-
-#contact h3 {
-	opacity: 0;
-	-webkit-transform: translate(-100px,0);
-	transform: translate(-100px,0);
-	-webkti-transition: opacity 0.5s, -webkit-transform 0.5s;
-	transition: opacity 0.5s, translate 0.5s;
-	-o-transition-delay: 0.2s;
-	-moz-transition-delay: 0.2s;
-	-webkit-transition-delay: 0.2s;
-	transition-delay: 0.2s;
 }
 
 #contact a {
@@ -572,46 +500,50 @@ header .menu .item a:hover {
 		height: 0;
 	}
 
+	#facebook .logo {
+		width: 90%;
+	}
+
+	#forzafootball .logo {
+		width: 40%;
+	}
+
 	#norwegian .logo {
 		width: 90%;
 	}
 
-#gbgtechweek .logo {
-	width: 50%;
-	margin-left: 2em;
-}
+	#gbgtechweek .logo {
+		width: 50%;
+		margin-left: 2em;
+	}
 
-#startuphack .logo {
-	width: 75%;
-}
+	#startuphack .logo {
+		width: 75%;
+	}
 
-#svecup .logo {
-	width: 75%;
-}
+	#svecup .logo {
+		width: 75%;
+	}
 
-#linkedin h2 {
-	margin-bottom: 0.6em;
-}
+	#linkedin h2 {
+		margin-bottom: 0.6em;
+	}
 
-#linkedin p:last-child {
-	margin-bottom: 2em;
-}
+	#linkedin p:last-child {
+		margin-bottom: 2em;
+	}
 
-#studies .content img {
-	visibility: visible;
-	height: inherit;
-}
+	#studies .content img {
+		visibility: visible;
+		height: inherit;
+	}
 
-#contact h3 {
-	font-size: 1.6rem;
-}
+	#contact h3 {
+		font-size: 1.6rem;
+	}
 
-#contact h4 {
-	font-size: 1.4rem;
-}
-
-
-
-
+	#contact h4 {
+		font-size: 1.4rem;
+	}
 
 }
